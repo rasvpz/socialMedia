@@ -55,11 +55,21 @@
  }
 
  .postLikeCounter{
-    font-size: 15px;
+    font-size: 13px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
  }
 
  .postCommentText{
     cursor: pointer;
     border-bottom: 1px dashed gray;
-    font-size: 15px ;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
  }
+ .postTopRight{
+    margin-left: 60%;
+ }
+.postText{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
