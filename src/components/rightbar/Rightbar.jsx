@@ -1,5 +1,6 @@
 import "./rightbar.css"
-
+import {Users} from '../../dummyData'
+import Online from "../../components/online/online"
 const Rightbar = () => {
   return (
     <div className="rightBar">
@@ -12,13 +13,9 @@ const Rightbar = () => {
           <img src="https://th.bing.com/th/id/OIP.V4moGpmB_0aLvKiikGdm8gHaEE?pid=ImgDet&rs=1" alt="" className="rightbarAd" />
         <h4 className="rightbarTitle">Online Friends</h4>
         <ul className="rightBarFriendList">
-          <li className="rightBarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img src="/assets/person/3.jpg" alt="" className="rightbarProfileImg" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightBarUsername"><b>John Carter</b></span>
-          </li>
+            {Users.map((u)=>(
+              <Online key={u.id} user={u} />
+            ))}
         </ul>
         </div>
       </div>
